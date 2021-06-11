@@ -8,15 +8,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="image-contianer">
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="drop">
+                <a href="#" class="dropdown-button">Images</a>
+                <div class="submenu">
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                </div>
+            </li>
+            <!--Added extra li here so students can see that a nav bar 
+        can have a drop down in beteen the li tags-->
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div class="image-contianer" id="image1">
             <img src="images/japan-one.jpg">
             <div class="overlay"></div>
         </div>
-        <div class="image-contianer">
+        <div class="image-contianer" id="image2">
             <img src="images/japan-two.jpg" class="zoom">
         </div>
-        <div class="image-contianer">
+        <div class="image-contianer" id="image3">
             <div class="circle">
                 <img src="images/japan-three.jpg">
             </div>
