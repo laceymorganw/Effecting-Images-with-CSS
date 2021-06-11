@@ -1,0 +1,84 @@
+img {
+    width: 500px;
+    height: 350px;
+    float: left;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-contianer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    margin-top: 15%;
+}
+
+/* IMAGE ONE*/
+.overlay {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgb(255, 127, 155);
+}
+
+.container .image-contianer:hover:nth-child(1) .overlay {
+    opacity: 0.4;
+}
+
+/* IMAGE TWO*/
+.zoom {
+    transform: scale(1);
+    transition: 0.5s ease-out;
+    z-index: 3;
+}
+
+.zoom:hover {
+    transition: 0.5s ease-in;
+    transform: scale(1.5);
+}
+
+/* IMAGE THREE*/
+
+.circle{
+    position: relative;
+    margin:0;
+    overflow: hidden;
+}
+
+.circle::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: orchid;
+}
+
+.circle:hover::before{
+    animation: bloom 1s;
+    background-color: orchid;
+}
+
+@keyframes bloom{
+    0%{
+        opacity: 0.5;
+        background-color: orchid;
+    }
+    100%{
+        opacity: 1;
+        background-color: orchid;
+        width: 300%;
+        height: 300%;
+    }
+}
