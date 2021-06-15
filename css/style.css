@@ -50,7 +50,7 @@ li.drop {
     position: absolute;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    margin-top: -10px;
+    margin-top: -9px;
 }
 
 .drop:hover .submenu {
@@ -93,8 +93,13 @@ img {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 80px; /*This keeps the nav bar from covering 
+    padding-top: 120px; /*This keeps the nav bar from covering 
     the image when the anchor link is click on */
+}
+
+#image3{
+    padding-bottom: 170px; /*added to make the space from the nav bar to the 
+    image the same as image 1 and 2 */
 }
 
 /* IMAGE ONE*/
@@ -189,6 +194,5 @@ footer {
     font-size: 23px;
     font-weight: 400;
     color: rgb(228, 159, 0);
-    text-align: left;
-    padding-left: 60px;
+    text-align: center;
 }
